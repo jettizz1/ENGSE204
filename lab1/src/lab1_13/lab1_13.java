@@ -13,7 +13,7 @@ public class lab1_13 {
 		}//End For (K)
 		int nubonline = 0;
 		for (int i = 0; i < K; i++) {
-			for (int j = 0; i < J; i++) {
+			for (int j = 0; j < J; j++) {
 				if (grid[i][j] == 1) {
 					nubonline++;
 				}//End IF
