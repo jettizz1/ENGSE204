@@ -1,41 +1,39 @@
 package lab1_14;
 import java.util.Scanner;
 public class lab1_14 {
-	public static void main(String[] args) {
-		Scanner sc = new Scanner(System.in);
-		int R = sc.nextInt();
-		int C = sc.nextInt();
-		sc.nextLine();
-		char [][] map = new char[R][C];
-		for (int i = 0; i < R; i++) {
-			String line = sc.nextLine();
-			for (int j = 0; j < C; j++) {
-				map[i][j] = line.charAt(j);
-			}
-		}
-		int targetR = sc.nextInt();
-		int targetC = sc.nextInt();
-		if (map[targetR][targetC]== '*') {
-			System.out.println("Mine");
-			sc.close();
-			return;
-		}
-		int count = 0;
-		int[] dR = {-1, -1, -1, 0, 0, 1, 1, 1};
-		int[] dC = {-1, 0, 1, -1, 1, -1, 0, 1};
-		for (int k = 0; k < 8; k++) {
-			int nr = targetR + dR[k];
-			int nc = targetC + dC[k];
-			if (nr >= 0 && nr < R && nc >= 0 && nc < C) {
-				if (map[nr][nc] == '*') {
-					count++;
-				}
-			}
-		}
+	 public static void main(String[] args) {
+	        try (Scanner sc = new Scanner(System.in)) {
+	            int R = sc.nextInt();
+	            int C = sc.nextInt();
+	            sc.nextLine();
+	            char[][] map = new char[R][C];
+	            for (int i = 0; i < R; i++) {
+	                String line = sc.nextLine();
+	                String[] tokens = line.split(" ");
+	                for (int j = 0; j < C; j++) {
+	                    map[i][j] = tokens[j].charAt(0);
+	                }
+	            }
+	            int targetR = sc.nextInt();
+	            int targetC = sc.nextInt();
+	            if (map[targetR][targetC] == '*') {
+	                System.out.println("Mine");
+	            } else {
+	                int count = 0;
+	                int[] dk = {-1, -1, -1, 0, 0, 1, 1, 1};
+	                int[] dt = {-1, 0, 1, -1, 1, -1, 0, 1};
+	                for (int k = 0; k < 8; k++) {
+	                    int nr = targetR + dk[k];
+	                    int nc = targetC + dt[k];
 
-		System.out.println();
-		sc.close();
+	                    if (nr >= 0 && nr < R && nc >= 0 && nc < C) {
+	                        if (map[nr][nc] == '*') {
+	                            count++;
+	                        }
+	                    }
+	                }
+	                System.out.println(count);
+	            }
+	        }
+	    }
 	}
-}
-
-		
