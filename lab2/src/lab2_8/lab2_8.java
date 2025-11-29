@@ -1,6 +1,5 @@
 package lab2_8;
 import java.util.Scanner;
-
 class TempConverterlow {
     public static double CelsiusToFahrenheit(double Celsius) {
         return (Celsius * 9.0 / 5.0) + 32;
