@@ -24,5 +24,4 @@ public class lab2_2 {
 			sk.close();
 		}
 }
-
 	
