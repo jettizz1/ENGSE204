@@ -6,11 +6,11 @@ class Playeruesr {
 		this.score = score;
 	}
 	
-	public int getScore() {
+	public int getScoreee() {
 		return this.score;
 	}
 	
-	public void setScore(int newScore) {
+	public void setScoreee(int newScore) {
 		this.score = newScore;
 	}
 }
@@ -23,10 +23,9 @@ public class lab3_2 {
 		System.out.print("Enter New Score: ");
 		int newscoreinput = scannerrr.nextInt();
 		Playeruesr playerzeroone = new Playeruesr(scoreinput);
-		playerzeroone.setScore(newscoreinput);
-		
+		playerzeroone.setScoreee(newscoreinput);
 		System.out.println("-------Output-------");
-		System.out.println("Score: " + playerzeroone.getScore());
+		System.out.println("Score: " + playerzeroone.getScoreee());
 		scannerrr.close();
 	}
 }
