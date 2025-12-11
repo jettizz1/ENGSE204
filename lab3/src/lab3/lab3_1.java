@@ -15,12 +15,10 @@ public class lab3_1 {
 
 	public static void main(String[] args) {
 		Scanner scannerrrz = new Scanner(System.in);
-		System.out.print("Enter name: ");
 		String inputUsername = scannerrrz.nextLine();
 		Userr userObject = new Userr(inputUsername);
 		
-		System.out.println("-------Output-------");
-		System.out.println("name: " + userObject.getUsername());
+		System.out.println( userObject.getUsername());
 		scannerrrz.close();
 	}
 }
