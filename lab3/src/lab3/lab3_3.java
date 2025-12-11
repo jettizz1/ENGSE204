@@ -25,12 +25,9 @@ import java.util.Scanner;
 
 			public static void main(String[] args) {
 				Scanner scannerrol = new Scanner(System.in);
-				
 				String initialPasswordinputtti = scannerrol.nextLine();
-				
 				String newPasswordinputtti = scannerrol.nextLine();
 				Usernamee userProfile = new Usernamee(initialPasswordinputtti);
-				
 				userProfile.setPassword(newPasswordinputtti);
 				System.out.println( userProfile.getPasswordddi());
 				scannerrol.close();
