@@ -26,11 +26,14 @@ class LicenseManagerra {
 	}
 	
 	public static void checkInnni() {
-		if (usedLicenses > 0) {
+		if (usedLicenses > 1) {
 			usedLicenses--;
 			System.out.println("Check-in successful.");
+			System.out.println("Check-in successful.");
+			
 		} else {
 			System.out.println("Nothing to check-in.");
+
 		}
 	}
 	
