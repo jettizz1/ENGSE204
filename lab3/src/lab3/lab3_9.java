@@ -22,6 +22,7 @@ class Userrr {
 		if (newPassword.length() >= minPasswordLength) {
 			this.password = newPassword;
             System.out.println("Update successful.");
+            System.out.println("invaild.");
         } else {
             System.out.println("Update failed.");
 		}
