@@ -14,6 +14,7 @@ class Dog extends Animall {
  }
 }
 
+
 public class lab5_1 {
  public static void main(String[] args) {
      Scanner Scannerri = new Scanner(System.in);
