@@ -1,5 +1,4 @@
-package lab5_7;
-
+package lab5_new;
 import java.util.Scanner;
 
 class Employee {
