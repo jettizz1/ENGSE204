@@ -33,7 +33,7 @@ class Motorcycle extends RentalVehicleiei {
 	}
 	@Override
 	public double calculateFee() {
-		return rentalRate * 1.10;
+		return rentalRate * 1.1;
 	}
 }
 
